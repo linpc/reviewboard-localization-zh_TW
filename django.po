@@ -27,11 +27,14 @@ msgid ""
 "Required. 30 characters or fewer. Alphanumeric characters (letters, digits, "
 "underscores, and periods) and '@'."
 msgstr ""
+"必填欄位：30 個字元以內，可包含英文字母、數字、"
+"底線符號（_）、破折號（-）和 '@' 符號。"
 
 #: accounts/admin.py:16
 msgid ""
 "This value must contain only letters, numbers, underscores, periods and '@'."
 msgstr ""
+"這個欄位只能填英文字母、數字、底線符號（_）、破折號（-）和 '@' 符號。"
 
 #: accounts/admin.py:25 accounts/admin.py:36 admin/forms.py:345
 #: reviews/datagrids.py:598 templates/accounts/login.html:30
@@ -68,25 +71,27 @@ msgstr "將我的個人資料設為不公開的"
 
 #: accounts/forms.py:137
 msgid "The text you entered didn't match what was displayed"
-msgstr ""
+msgstr "您輸入的驗證碼與螢幕上顯示的不相符"
 
 #: accounts/forms.py:143
 msgid "You need to respond to the captcha"
-msgstr ""
+msgstr "您必須輸入驗證碼"
 
 #: accounts/forms.py:160
 msgid "Domain name"
-msgstr ""
+msgstr "主機位址"
 
 #: accounts/forms.py:161
 msgid ""
 "Enter the domain name to use, (ie. example.com). This will be used to query "
 "for LDAP servers and to bind to the domain."
 msgstr ""
+"輸入要使用的主機位址（像是 example.com）。這將被用來作為"
+"LDAP 伺服器查詢與註冊連結的位址。"
 
 #: accounts/forms.py:166 accounts/forms.py:327 admin/forms.py:352
 msgid "Use TLS for authentication"
-msgstr ""
+msgstr "透過 TLS 驗證"
 
 #: accounts/forms.py:170
 msgid "Find DC from DNS"
@@ -146,15 +151,15 @@ msgstr ""
 
 #: accounts/forms.py:230
 msgid "Enable registration"
-msgstr ""
+msgstr "開放註冊"
 
 #: accounts/forms.py:231
 msgid "Allow users to register new accounts."
-msgstr ""
+msgstr "允許使用者註冊新帳號"
 
 #: accounts/forms.py:235
 msgid "Show a captcha for registration"
-msgstr ""
+msgstr "註冊時要求輸入驗證碼 (captcha)"
 
 #: accounts/forms.py:237
 #, python-format
@@ -164,18 +169,23 @@ msgid ""
 "\"%(register_url)s\">here</A> to register an account and type in your new "
 "keys below."
 msgstr ""
+"使用 <a href=\"%(recaptcha_url)s\">reCAPTCHA</a> 來在註冊頁面上顯示驗證碼。"
+"若要使用這個功能，您必須要到 <a href=\"%(register_url)s\">這裡</a> 註冊一個帳號"
+"並且在下方輸入您新的 key。"
 
 #: accounts/forms.py:248
 msgid "reCAPTCHA Public Key"
 msgstr ""
+"reCAPTCHA 公鑰"
 
 #: accounts/forms.py:253
 msgid "reCAPTCHA Private Key"
 msgstr ""
+"reCAPTCHA 私鑰"
 
 #: accounts/forms.py:262 accounts/forms.py:271
 msgid "This field is required."
-msgstr "這個欄位必填。"
+msgstr "這是個必填欄位。"
 
 #: accounts/forms.py:276
 msgid "Basic Authentication Settings"
@@ -183,11 +193,11 @@ msgstr "基本驗證設定"
 
 #: accounts/forms.py:282
 msgid "LDAP Server"
-msgstr ""
+msgstr "LDAP 伺服器"
 
 #: accounts/forms.py:283
 msgid "The LDAP server to authenticate with. For example: ldap://localhost:389"
-msgstr ""
+msgstr "填入要進行認證的 LDAP 伺服器。像是：ldap://localhost:389"
 
 #: accounts/forms.py:287
 msgid "LDAP Base DN"
@@ -205,7 +215,7 @@ msgstr ""
 
 #: accounts/forms.py:295
 msgid "The attribute in the LDAP server that stores the user's given name."
-msgstr ""
+msgstr "在 LDAP 伺服器中儲存使用者帳號的屬性"
 
 #: accounts/forms.py:300
 msgid "Surname Attribute"
@@ -223,17 +233,19 @@ msgstr ""
 msgid ""
 "The attribute in the LDAP server that stores the user's full name.  This "
 "takes precedence over the \"Full Name Attribute\" and \"Surname Attribute.\""
-msgstr ""
+msgstr "在 LDAP 伺服器中儲存使用者全名的屬性。這會覆寫 \"Full Name Attribute\" 以及"
+"\"Surname Attribute.\" 的設定"
 
 #: accounts/forms.py:314 accounts/forms.py:399
 msgid "E-Mail Domain"
-msgstr ""
+msgstr "E-Mail 使用的網域"
 
 #: accounts/forms.py:315
 msgid ""
 "The domain name appended to the username to construct the user's e-mail "
 "address. This takes precedence over \"E-Mail LDAP Attribute.\""
-msgstr ""
+msgstr "用來附加在使用者帳號後面，產生使用者 e-mail 的網域名稱。"
+"這會覆寫 \"E-Mail LDAP Attribute.\" 的設定"
 
 #: accounts/forms.py:321
 msgid "E-Mail LDAP Attribute"
@@ -243,7 +255,7 @@ msgstr ""
 msgid ""
 "The attribute in the LDAP server that stores the user's e-mail address. For "
 "example: mail"
-msgstr ""
+msgstr "在 LDAP 伺服器中儲存使用者 e-mail 位址的屬性。像是：mail"
 
 #: accounts/forms.py:331
 msgid "User Mask"
@@ -269,15 +281,15 @@ msgstr ""
 
 #: accounts/forms.py:346
 msgid "Anonymous User Password"
-msgstr ""
+msgstr "匿名使用者密碼"
 
 #: accounts/forms.py:348
 msgid "The optional password for the anonymous user."
-msgstr ""
+msgstr "匿名帳戶的選擇性密碼"
 
 #: accounts/forms.py:372
 msgid "LDAP Authentication Settings"
-msgstr ""
+msgstr "LDAP 驗證設定"
 
 #: accounts/forms.py:377
 msgid "Backends"
@@ -333,7 +345,7 @@ msgstr ""
 
 #: accounts/forms.py:430
 msgid "Automatically create new user accounts."
-msgstr ""
+msgstr "自動產生新的使用者帳戶"
 
 #: accounts/forms.py:431
 msgid ""
@@ -351,7 +363,7 @@ msgstr ""
 
 #: accounts/models.py:45
 msgid "first time setup done"
-msgstr ""
+msgstr "完成第一次設定"
 
 #: accounts/models.py:46
 msgid ""
@@ -361,7 +373,7 @@ msgstr ""
 
 #: accounts/models.py:51
 msgid "collapsed diffs"
-msgstr ""
+msgstr "收併 diff 檔"
 
 #: accounts/models.py:52
 msgid ""
@@ -374,7 +386,7 @@ msgstr ""
 
 #: accounts/models.py:58
 msgid "syntax highlighting"
-msgstr ""
+msgstr "語法高亮度顯示"
 
 #: accounts/models.py:59
 msgid ""
@@ -383,7 +395,7 @@ msgstr ""
 
 #: accounts/models.py:62
 msgid "profile private"
-msgstr ""
+msgstr "個人資料不公開"
 
 #: accounts/models.py:63
 msgid "Indicates whether the user wishes to keep his/her profile private."
@@ -450,23 +462,25 @@ msgstr ""
 
 #: admin/forms.py:53
 msgid "Server"
-msgstr ""
+msgstr "主機網址"
 
 #: admin/forms.py:54
 msgid ""
 "The URL of this Review Board server. This should not contain the "
 "subdirectory Review Board is installed in."
 msgstr ""
+"Review Board 伺服器的 URL 網址。「不要」包含 Review Board 安裝的子目錄路徑"
 
 #: admin/forms.py:59
 msgid "Media URL"
-msgstr ""
+msgstr "媒體檔 URL"
 
 #: admin/forms.py:60
 msgid ""
 "The URL to the media files. Leave blank to use the default media path on "
 "this server."
 msgstr ""
+"媒體檔案的 URL。若留白表示使用伺服器上的預設媒體路徑。"
 
 #: admin/forms.py:66
 msgid "Administrator Name"
@@ -550,7 +564,7 @@ msgstr "認證方式"
 
 #: admin/forms.py:208
 msgid "The method Review Board should use for authenticating users."
-msgstr ""
+msgstr "Review Board 要用來驗證使用者的方式。"
 
 #: admin/forms.py:309
 msgid "Authentication Settings"
@@ -571,7 +585,7 @@ msgstr "當有新使用者註冊時寄送 email"
 
 #: admin/forms.py:333
 msgid "Sender e-mail address"
-msgstr "寄件者的 email address"
+msgstr "寄件者的 email 位址"
 
 #: admin/forms.py:334
 msgid ""
@@ -579,10 +593,12 @@ msgid ""
 "will be used to make e-mails appear to come from the user triggering the e-"
 "mail."
 msgstr ""
+"所有的 e-mail 將從這個位址被寄送。而 e-mail 檔頭的 \"Sender\" 欄位"
+"將會顯示為觸動當次 e-mail 寄發動作的使用者"
 
 #: admin/forms.py:339
 msgid "Mail Server"
-msgstr ""
+msgstr "Mail 伺服器"
 
 #: admin/forms.py:342
 msgid "Port"
@@ -590,29 +606,30 @@ msgstr ""
 
 #: admin/forms.py:349 templates/accounts/login.html:40
 msgid "Password"
-msgstr ""
+msgstr "密碼"
 
 #: admin/forms.py:363
 msgid "E-Mail Settings"
-msgstr ""
+msgstr "E-Mail 設定"
 
 #: admin/forms.py:369
 msgid "Show syntax highlighting"
-msgstr ""
+msgstr "顯示語法高亮度"
 
 #: admin/forms.py:373
 msgid "Syntax highlighting threshold"
-msgstr ""
+msgstr "語法高亮度上限"
 
 #: admin/forms.py:374
 msgid ""
 "Files with lines greater than this number will not have syntax "
 "highlighting.  Enter 0 for no limit."
-msgstr ""
+msgstr "檔案行數大於這個數字將不會顯示語法高亮度。"
+"若不做任何限制請輸入 0 。"
 
 #: admin/forms.py:379
 msgid "Show trailing whitespace"
-msgstr ""
+msgstr "顯示結尾的空白符"
 
 #: admin/forms.py:380
 msgid ""
@@ -622,21 +639,21 @@ msgstr ""
 
 #: admin/forms.py:386
 msgid "Show all whitespace for"
-msgstr ""
+msgstr "在哪些類型檔案顯示所有的空白符"
 
 #: admin/forms.py:388
 msgid ""
 "A comma-separated list of file patterns for which all whitespace changes "
 "should be shown. (e.g., \"*.py, *.txt\")"
-msgstr ""
+msgstr "要顯示所有空白符異動的檔案類型列表，以半形逗點分隔。（像是：\"*.py, *.txt\"）"
 
 #: admin/forms.py:393
 msgid "Lines of Context"
-msgstr ""
+msgstr "內容行數"
 
 #: admin/forms.py:394
 msgid "The number of unchanged lines shown above and below changed lines."
-msgstr ""
+msgstr "在有異動的行上下方，要顯示的未異動行數。"
 
 #: admin/forms.py:399
 msgid "Paginate by"
@@ -644,7 +661,7 @@ msgstr ""
 
 #: admin/forms.py:400
 msgid "The number of files to display per page in the diff viewer."
-msgstr ""
+msgstr "在 diff 檔瀏覽器中，每一頁要顯示的檔案數。"
 
 #: admin/forms.py:405
 msgid "Paginate orphans"
@@ -723,25 +740,25 @@ msgstr ""
 #: admin/forms.py:537 admin/forms.py:550
 #, python-format
 msgid "Unable to write SSH key file: %s"
-msgstr ""
+msgstr "無法寫入 SSH key 檔案：%s"
 
 #: admin/forms.py:542
 #, python-format
 msgid "Error generating SSH key: %s"
-msgstr ""
+msgstr "產生 SSH key 時發生錯誤：%s"
 
 #: admin/forms.py:555
 #, python-format
 msgid "Error uploading SSH key: %s"
-msgstr ""
+msgstr "上傳 SSH key 時發生錯誤：%s"
 
 #: admin/forms.py:564
 msgid "File storage method"
-msgstr ""
+msgstr "檔案儲存方式"
 
 #: admin/forms.py:566
 msgid "Host file system"
-msgstr ""
+msgstr "主機上的檔案系統"
 
 #: admin/forms.py:567
 msgid "Amazon S3"
@@ -751,7 +768,7 @@ msgstr ""
 msgid ""
 "Storage method and location for uploaded files, such as screenshots and file "
 "attachments."
-msgstr ""
+msgstr "用來儲存上傳的檔案，像是截圖、或是附加檔案的方式。"
 
 #: admin/forms.py:576
 msgid "Amazon AWS access key"
@@ -799,23 +816,23 @@ msgstr ""
 
 #: admin/forms.py:666 admin/forms.py:671
 msgid "File Storage Settings"
-msgstr ""
+msgstr "檔案儲存設定"
 
 #: admin/forms.py:677
 msgid "Amazon S3 Settings"
-msgstr ""
+msgstr "Amazon S3 設定"
 
 #: admin/forms.py:686
 msgid "CouchDB Settings"
-msgstr ""
+msgstr "CouchDB 設定"
 
 #: admin/views.py:37 templates/admin/base_site.html:23
 msgid "Dashboard"
-msgstr "面版"
+msgstr "面板"
 
 #: admin/views.py:53 templates/admin/dashboard.html:58
 msgid "Server Cache"
-msgstr ""
+msgstr "伺服器快取"
 
 #: admin/views.py:89
 msgid "SSH Settings"
@@ -828,7 +845,7 @@ msgstr "Review request 編號"
 
 #: attachments/models.py:17 reviews/models.py:185
 msgid "caption"
-msgstr ""
+msgstr "標題"
 
 #: attachments/models.py:18 reviews/models.py:186
 msgid "draft caption"
@@ -878,6 +895,7 @@ msgstr ""
 msgid ""
 "Diff content couldn't be converted to UTF-8 using the following encodings: %s"
 msgstr ""
+"Diff 檔內容無法透過下面 %s 的編碼方式轉換至 UTF-8"
 
 #: diffviewer/forms.py:29 reviews/forms.py:94
 msgid "Base Directory"
@@ -969,7 +987,7 @@ msgstr "狀態"
 #: diffviewer/models.py:54 diffviewer/models.py:102 reviews/models.py:85
 #: reviews/models.py:159 site/models.py:45
 msgid "name"
-msgstr ""
+msgstr "名稱"
 
 #: diffviewer/models.py:55
 msgid "revision"
@@ -1348,7 +1366,7 @@ msgstr ""
 
 #: reviews/models.py:289 reviews/models.py:1526
 msgid "time e-mailed"
-msgstr ""
+msgstr "寄出 e-mail 的時間"
 
 #: reviews/models.py:292 reviews/models.py:892
 msgid "summary"
@@ -1461,7 +1479,7 @@ msgstr "issue 狀態"
 
 #: reviews/models.py:1349
 msgid "file diff"
-msgstr ""
+msgstr "檔案差異"
 
 #: reviews/models.py:1352
 msgid "interdiff file"
@@ -1517,7 +1535,7 @@ msgstr "送至檔案庫"
 
 #: reviews/models.py:1516
 msgid "Indicates whether the reviewer thinks this code is ready to ship."
-msgstr ""
+msgstr "指出是否審查者認為這份 code 已經可以進行送交。"
 
 #: reviews/models.py:1521
 msgid "Base reply to"
@@ -1691,11 +1709,11 @@ msgstr ""
 
 #: scmtools/forms.py:259 scmtools/forms.py:321
 msgid "Custom"
-msgstr ""
+msgstr "自行維護"
 
 #: scmtools/forms.py:266
 msgid "None"
-msgstr ""
+msgstr "無"
 
 #: scmtools/forms.py:342 templates/admin/repository_confirmations.html:54
 msgid "Re-edit repository"
@@ -1734,6 +1752,7 @@ msgid ""
 "Your GitHub API token. This is needed in order to access files on this "
 "repository."
 msgstr ""
+"您的 GitHub API token。為了能夠存取您檔案庫內的檔案，這是必填的。"
 
 #: scmtools/forms.py:390
 msgid "Repository type"
@@ -1847,7 +1866,7 @@ msgstr ""
 
 #: scmtools/models.py:85
 msgid "Show this repository"
-msgstr ""
+msgstr "顯示這個檔案庫"
 
 #: scmtools/models.py:87
 msgid ""
@@ -1869,24 +1888,27 @@ msgid ""
 "Private repositories must explicitly list the users and groups that can "
 "access them."
 msgstr ""
+"在公開的檔案庫上的 Review requests 和檔案對每個人都是可見的。"
+"在非公開的檔案庫上，一定要在可存取使用者或群組清單內才可存取。"
 
 #: scmtools/models.py:108
 msgid "Users with access"
-msgstr ""
+msgstr "可存取的使用者"
 
 #: scmtools/models.py:109
 msgid "A list of users with explicit access to the repository."
-msgstr ""
+msgstr "可存取檔案庫的使用者列表"
 
 #: scmtools/models.py:115
 msgid "Review groups with access"
-msgstr ""
+msgstr "可存取的 Review 群組"
 
 #: scmtools/models.py:116
 msgid ""
 "A list of invite-only review groups whose members have explicit access to "
 "the repository."
 msgstr ""
+"一個僅限受邀加入的 review 群組清單，其成員可以存取檔案庫。"
 
 #: scmtools/sshutils.py:30
 #, python-format
@@ -1981,7 +2003,7 @@ msgstr "新的 Review Request"
 
 #: templates/base.html:99
 msgid "Submitters"
-msgstr "送交者"
+msgstr "使用者列表"
 
 #: templates/base.html:114
 msgid "JavaScript is turned off"
@@ -2018,11 +2040,11 @@ msgstr "您不需要註冊新帳戶，使用一般的帳號登入即可"
 
 #: templates/accounts/login.html:34
 msgid "Don't have an account?"
-msgstr ""
+msgstr "還沒有帳號？"
 
 #: templates/accounts/login.html:35
 msgid "Create one now"
-msgstr ""
+msgstr "現在就建立一個新帳號"
 
 #: templates/accounts/login.html:44
 msgid "Forgot your password?"
@@ -2043,6 +2065,8 @@ msgid ""
 "Forgotten your password? Enter your e-mail address, and\n"
 "   we'll send you instructions for creating a new one."
 msgstr ""
+"忘記密碼了嗎？數入您的 e-mail 位址，\n   我們會寄一封指引信給您，"
+"告訴您要怎樣重設密碼。"
 
 #: templates/accounts/password_reset.html:25
 msgid "E-mail address"
@@ -2074,6 +2098,8 @@ msgid ""
 "Please enter your new password twice so we can\n"
 "\tverify you typed it in correctly."
 msgstr ""
+"請輸入您的新密碼兩次，以讓我們\n"
+"\t確保您輸入正確。"
 
 #: templates/accounts/password_reset_confirm.html:17
 msgid "New password"
@@ -2185,6 +2211,8 @@ msgid ""
 "\n"
 "%(auth_name)s Authentication Settings\n"
 msgstr ""
+"\n"
+"%(auth_name)s 驗證設定\n"
 
 #: templates/admin/base_site.html:4 templates/admin/base_site.html.py:13
 msgid "Review Board administration"
@@ -2232,11 +2260,11 @@ msgstr ""
 
 #: templates/admin/cache_stats.html:50
 msgid "Statistics are not available for this backend."
-msgstr ""
+msgstr "目前的 backend 不提供統計數據"
 
 #: templates/admin/dashboard.html:19
 msgid "Common management operations."
-msgstr ""
+msgstr "一般管理操作"
 
 #: templates/admin/dashboard.html:20
 msgid "Manage"
@@ -2338,6 +2366,9 @@ msgid ""
 "  A recent upgrade requires manual updates to be made on this server. After\n"
 "  these changes are made, you should restart your server.\n"
 msgstr ""
+"\n"
+"  一個新的升級需要在這個伺服器上手動更新。在\n"
+"  進行變更之後，您需要重新啟動您的伺服器。\n"
 
 #: templates/admin/manual_updates_required.html:19
 msgid ""
@@ -2345,6 +2376,9 @@ msgid ""
 "  If you have any questions or problems, please contact us on our\n"
 "  <a href=\"http://groups.google.com/group/reviewboard\">mailing list</a>.\n"
 msgstr ""
+"\n"
+"  若您在操作上有任何的問題，請聯絡我們，透過我們的\n"
+"  <a href=\"http://groups.google.com/group/reviewboard\">郵遞論壇</a>.\n"
 
 #: templates/admin/repository_confirmations.html:5
 msgid "SSH Public Key:"
@@ -2445,7 +2479,7 @@ msgstr "公鑰："
 
 #: templates/admin/ssh_settings.html:31
 msgid "Generate an SSH Key"
-msgstr ""
+msgstr "產生一個 SSH Key"
 
 #: templates/admin/ssh_settings.html:33
 msgid ""
@@ -2462,11 +2496,11 @@ msgstr ""
 
 #: templates/admin/ssh_settings.html:45
 msgid "Generate Key"
-msgstr ""
+msgstr "產生 Key"
 
 #: templates/admin/ssh_settings.html:48
 msgid "Upload an SSH Key"
-msgstr ""
+msgstr "上傳一個 SSH Key"
 
 #: templates/admin/ssh_settings.html:50
 msgid ""
@@ -2478,7 +2512,7 @@ msgstr ""
 
 #: templates/admin/ssh_settings.html:59
 msgid "Upload Key"
-msgstr ""
+msgstr "上傳 Key"
 
 #: templates/admin/manual-updates/data-dir.html:2
 msgid "Data directory changes"
@@ -2545,7 +2579,7 @@ msgstr ""
 
 #: templates/admin/manual-updates/database-error.html:2
 msgid "A database error occurred"
-msgstr ""
+msgstr "資料庫發生錯誤"
 
 #: templates/admin/manual-updates/database-error.html:5
 msgid ""
@@ -3119,6 +3153,9 @@ msgid ""
 "   Created %(dateadded)s and submitted %(lastupdated)s ago\n"
 "   "
 msgstr ""
+"\n"
+"   於 %(dateadded)s 建立並在 %(lastupdated)s 前送交\n"
+"   "
 
 #: templates/reviews/review_request_box.html:20
 #, python-format
@@ -3127,6 +3164,9 @@ msgid ""
 "   Created %(dateadded)s and discarded %(lastupdated)s ago\n"
 "   "
 msgstr ""
+"\n"
+"   於 %(dateadded)s 建立並在 %(lastupdated)s 前捨棄\n"
+"   "
 
 #: templates/reviews/review_request_box.html:25
 #, python-format
@@ -3135,6 +3175,9 @@ msgid ""
 "   Created %(dateadded)s and updated %(lastupdated)s ago\n"
 "   "
 msgstr ""
+"\n"
+"   於 %(dateadded)s 建立並在 %(lastupdated)s 前更新\n"
+"   "
 
 #: templates/reviews/review_request_box.html:76
 msgid "(pending)"
@@ -3208,7 +3251,7 @@ msgstr ""
 
 #: templates/reviews/reviewable_base.html:18
 msgid "You have a pending review."
-msgstr ""
+msgstr "您有一個待決的 review。"
 
 #: templates/reviews/reviewable_base.html:19
 msgid "Edit Review"
