@@ -60,11 +60,11 @@ msgstr ""
 
 #: accounts/forms.py:23
 msgid "Enable syntax highlighting in the diff viewer"
-msgstr "在 diff viewer 中開啟語法高亮度顯示"
+msgstr "在 diff 檔瀏覽器中開啟語法高亮度顯示"
 
 #: accounts/forms.py:25
 msgid "Keep your user profile private"
-msgstr "將我的使用者資料設為私人可讀的"
+msgstr "將我的個人資料設為不公開的"
 
 #: accounts/forms.py:137
 msgid "The text you entered didn't match what was displayed"
@@ -175,11 +175,11 @@ msgstr ""
 
 #: accounts/forms.py:262 accounts/forms.py:271
 msgid "This field is required."
-msgstr ""
+msgstr "這個欄位必填。"
 
 #: accounts/forms.py:276
 msgid "Basic Authentication Settings"
-msgstr ""
+msgstr "基本驗證設定"
 
 #: accounts/forms.py:282
 msgid "LDAP Server"
@@ -554,12 +554,12 @@ msgstr ""
 
 #: admin/forms.py:309
 msgid "Authentication Settings"
-msgstr ""
+msgstr "驗證設定"
 
 #: admin/forms.py:315 admin/forms.py:438 admin/forms.py:510
 #: templates/admin/settings.html:7
 msgid "General"
-msgstr ""
+msgstr "一般設定"
 
 #: admin/forms.py:327
 msgid "Send e-mails for review requests and reviews"
@@ -658,11 +658,11 @@ msgstr ""
 
 #: admin/forms.py:434
 msgid "Diff Viewer Settings"
-msgstr ""
+msgstr "Diif 檔瀏覽器設定"
 
 #: admin/forms.py:446 admin/forms.py:516 scmtools/admin.py:51
 msgid "Advanced"
-msgstr ""
+msgstr "進階設定"
 
 #: admin/forms.py:448
 msgid ""
@@ -672,7 +672,7 @@ msgstr ""
 
 #: admin/forms.py:463
 msgid "Enable logging"
-msgstr ""
+msgstr "開啟 log 記錄"
 
 #: admin/forms.py:464
 msgid ""
@@ -682,7 +682,7 @@ msgstr ""
 
 #: admin/forms.py:470
 msgid "Log directory"
-msgstr ""
+msgstr "存放 log 的目錄"
 
 #: admin/forms.py:471
 msgid ""
@@ -702,19 +702,19 @@ msgstr ""
 
 #: admin/forms.py:487
 msgid "This path does not exist."
-msgstr ""
+msgstr "這個路徑不存在"
 
 #: admin/forms.py:490
 msgid "This is not a directory."
-msgstr ""
+msgstr "這不是一個目錄"
 
 #: admin/forms.py:494
 msgid "This path is not writable by the web server."
-msgstr ""
+msgstr "這個路徑無法被網頁伺服器寫入"
 
 #: admin/forms.py:507
 msgid "Logging Settings"
-msgstr ""
+msgstr "記錄設定"
 
 #: admin/forms.py:527
 msgid "Key file"
@@ -811,7 +811,7 @@ msgstr ""
 
 #: admin/views.py:37 templates/admin/base_site.html:23
 msgid "Dashboard"
-msgstr ""
+msgstr "面版"
 
 #: admin/views.py:53 templates/admin/dashboard.html:58
 msgid "Server Cache"
@@ -819,12 +819,12 @@ msgstr ""
 
 #: admin/views.py:89
 msgid "SSH Settings"
-msgstr ""
+msgstr "SSH 設定"
 
 #: attachments/admin.py:15 reviews/admin.py:21 reviews/admin.py:206
 #: reviews/admin.py:217 reviews/admin.py:228
 msgid "Review request ID"
-msgstr ""
+msgstr "Review request 編號"
 
 #: attachments/models.py:17 reviews/models.py:185
 msgid "caption"
@@ -832,11 +832,11 @@ msgstr ""
 
 #: attachments/models.py:18 reviews/models.py:186
 msgid "draft caption"
-msgstr ""
+msgstr "草稿標題"
 
 #: attachments/models.py:20
 msgid "file"
-msgstr ""
+msgstr "檔案"
 
 #: attachments/models.py:23
 msgid "mimetype"
@@ -936,7 +936,7 @@ msgstr ""
 
 #: diffviewer/models.py:29
 msgid "source file"
-msgstr ""
+msgstr "原始碼檔案"
 
 #: diffviewer/models.py:30
 msgid "destination file"
@@ -952,7 +952,7 @@ msgstr ""
 
 #: diffviewer/models.py:35
 msgid "diff"
-msgstr ""
+msgstr "diff 檔"
 
 #: diffviewer/models.py:36 templates/diffviewer/changeindex_entry.html:11
 msgid "binary file"
@@ -1049,20 +1049,20 @@ msgstr ""
 
 #: reviews/admin.py:146
 msgid "Close selected review requests as submitted"
-msgstr ""
+msgstr "將選擇的 review requests 關閉，標示為已送交"
 
 #: reviews/admin.py:160
 msgid "Close selected review requests as discarded"
-msgstr ""
+msgstr "將選擇的 review requests 關閉，標示成捨棄狀態"
 
 #: reviews/admin.py:172
 msgid "Reopen selected review requests"
-msgstr ""
+msgstr "重新開啟選擇的 review requests"
 
 #: reviews/datagrids.py:28 reviews/datagrids.py:29
 #: reviews/templatetags/reviewtags.py:582
 msgid "Starred"
-msgstr ""
+msgstr "星號標記"
 
 #: reviews/datagrids.py:103 reviews/datagrids.py:104
 #: templates/reviews/review_request_actions_primary.html:4
@@ -1119,11 +1119,11 @@ msgstr "檔案庫"
 
 #: reviews/datagrids.py:318 templates/reviews/review_request_box.html:67
 msgid "People"
-msgstr ""
+msgstr "審查人"
 
 #: reviews/datagrids.py:319
 msgid "Target People"
-msgstr ""
+msgstr "負責審查人"
 
 #: reviews/datagrids.py:331 templates/base.html:98
 #: templates/accounts/prefs.html:54
@@ -1133,7 +1133,7 @@ msgstr "群組"
 
 #: reviews/datagrids.py:332
 msgid "Target Groups"
-msgstr ""
+msgstr "負責審查群組"
 
 #: reviews/datagrids.py:363
 msgid "Reviews"
@@ -1182,7 +1182,7 @@ msgstr "Diff 檔相對更新時間"
 
 #: reviews/datagrids.py:441 reviews/datagrids.py:452
 msgid "Review ID"
-msgstr ""
+msgstr "Review 編號"
 
 #: reviews/datagrids.py:552
 msgid "All Outgoing Review Requests"
@@ -1194,12 +1194,12 @@ msgstr "所有我的 Review Requests"
 
 #: reviews/datagrids.py:560
 msgid "Incoming Review Requests to Me"
-msgstr ""
+msgstr "給我的 Review Requests"
 
 #: reviews/datagrids.py:571
 #, python-format
 msgid "Incoming Review Requests to %s"
-msgstr ""
+msgstr "給 %s 的 Review Requests"
 
 #: reviews/datagrids.py:575
 msgid "All Incoming Review Requests to My Groups"
@@ -1243,7 +1243,7 @@ msgstr "所有群組"
 
 #: reviews/datagrids.py:667
 msgid "Watched groups"
-msgstr ""
+msgstr "追蹤群組"
 
 #: reviews/forms.py:22
 msgid "Name"
@@ -1288,7 +1288,7 @@ msgstr "郵遞群組 (mailing list)"
 
 #: reviews/models.py:88
 msgid "The mailing list review requests and discussions are sent to."
-msgstr ""
+msgstr "review requests 與討論要寄送的郵遞群組。"
 
 #: reviews/models.py:92
 msgid "users"
@@ -1296,15 +1296,15 @@ msgstr "使用者"
 
 #: reviews/models.py:96
 msgid "incoming review request count"
-msgstr ""
+msgstr "送進來的 review request 數"
 
 #: reviews/models.py:100
 msgid "invite only"
-msgstr ""
+msgstr "僅限受邀請加入"
 
 #: reviews/models.py:140
 msgid "review group"
-msgstr ""
+msgstr "review 群組"
 
 #: reviews/models.py:160
 msgid "file regex"
@@ -1312,15 +1312,15 @@ msgstr ""
 
 #: reviews/models.py:164
 msgid "default groups"
-msgstr ""
+msgstr "預設審查群組"
 
 #: reviews/models.py:166
 msgid "default people"
-msgstr ""
+msgstr "預設審查人"
 
 #: reviews/models.py:188
 msgid "image"
-msgstr ""
+msgstr "圖片"
 
 #: reviews/models.py:268
 msgid "Pending Review"
@@ -1372,15 +1372,15 @@ msgstr ""
 
 #: reviews/models.py:304 reviews/models.py:906
 msgid "target groups"
-msgstr ""
+msgstr "負責審查群組"
 
 #: reviews/models.py:308 reviews/models.py:909
 msgid "target people"
-msgstr ""
+msgstr "負責審查人"
 
 #: reviews/models.py:314 reviews/models.py:914
 msgid "screenshots"
-msgstr ""
+msgstr "畫面截圖"
 
 #: reviews/models.py:317 reviews/models.py:917
 msgid "inactive screenshots"
@@ -1408,19 +1408,19 @@ msgstr ""
 
 #: reviews/models.py:336
 msgid "change descriptions"
-msgstr ""
+msgstr "更改說明"
 
 #: reviews/models.py:341
 msgid "last review timestamp"
-msgstr ""
+msgstr "最後審查時間戳記"
 
 #: reviews/models.py:344
 msgid "ship-it count"
-msgstr ""
+msgstr "送交次數"
 
 #: reviews/models.py:606
 msgid "(no summary)"
-msgstr ""
+msgstr "（無摘要）"
 
 #: reviews/models.py:889 reviews/models.py:1510
 msgid "review request"
@@ -1428,7 +1428,7 @@ msgstr ""
 
 #: reviews/models.py:901
 msgid "change description"
-msgstr ""
+msgstr "更改說明"
 
 #: reviews/models.py:928
 msgid "inactive files"
@@ -1477,7 +1477,7 @@ msgstr "留言內容"
 
 #: reviews/models.py:1363
 msgid "first line"
-msgstr ""
+msgstr "第一行"
 
 #: reviews/models.py:1365
 msgid "number of lines"
@@ -1505,7 +1505,7 @@ msgstr ""
 
 #: reviews/models.py:1466
 msgid "file_attachment"
-msgstr ""
+msgstr "附加檔案"
 
 #: reviews/models.py:1511
 msgid "user"
@@ -1651,7 +1651,7 @@ msgstr ""
 
 #: scmtools/forms.py:30
 msgid "Get your API token"
-msgstr ""
+msgstr "取得您的 API token"
 
 #: scmtools/forms.py:46
 msgid "Bitbucket"
@@ -1737,7 +1737,7 @@ msgstr ""
 
 #: scmtools/forms.py:390
 msgid "Repository type"
-msgstr ""
+msgstr "檔案庫類型"
 
 #: scmtools/forms.py:396
 msgid "Use hosting service's bug tracker"
@@ -1857,11 +1857,11 @@ msgstr ""
 
 #: scmtools/models.py:93
 msgid "Local site"
-msgstr ""
+msgstr "本地站台"
 
 #: scmtools/models.py:97
 msgid "publicly accessible"
-msgstr ""
+msgstr "可供公開存取"
 
 #: scmtools/models.py:99
 msgid ""
@@ -2046,20 +2046,20 @@ msgstr ""
 
 #: templates/accounts/password_reset.html:25
 msgid "E-mail address"
-msgstr ""
+msgstr "E-mail 位址"
 
 #: templates/accounts/password_reset.html:27
 msgid "Recover"
-msgstr ""
+msgstr "救援"
 
 #: templates/accounts/password_reset_complete.html:5
 #: templates/accounts/password_reset_complete.html:9
 msgid "Password reset complete"
-msgstr ""
+msgstr "密碼重設完成"
 
 #: templates/accounts/password_reset_complete.html:11
 msgid "Your password has been set.  You may go ahead and log in now."
-msgstr ""
+msgstr "您的密碼已經重設，你現在可以繼續操作並登入"
 
 #: templates/accounts/password_reset_complete.html:12
 msgid "Log in."
@@ -2067,7 +2067,7 @@ msgstr "登入"
 
 #: templates/accounts/password_reset_confirm.html:11
 msgid "Enter new password"
-msgstr ""
+msgstr "輸入新的密碼"
 
 #: templates/accounts/password_reset_confirm.html:13
 msgid ""
@@ -2077,19 +2077,19 @@ msgstr ""
 
 #: templates/accounts/password_reset_confirm.html:17
 msgid "New password"
-msgstr ""
+msgstr "新密碼"
 
 #: templates/accounts/password_reset_confirm.html:22
 msgid "Confirm password"
-msgstr ""
+msgstr "再次確認密碼"
 
 #: templates/accounts/password_reset_confirm.html:28
 msgid "Change my password"
-msgstr ""
+msgstr "更改我的密碼"
 
 #: templates/accounts/password_reset_confirm.html:35
 msgid "Password reset unsuccessful"
-msgstr ""
+msgstr "密碼重設失敗"
 
 #: templates/accounts/password_reset_confirm.html:38
 #, python-format
@@ -2101,11 +2101,11 @@ msgstr ""
 
 #: templates/accounts/password_reset_done.html:5
 msgid "Password Reset Successful"
-msgstr ""
+msgstr "密碼重設成功"
 
 #: templates/accounts/password_reset_done.html:9
 msgid "Password reset successful"
-msgstr ""
+msgstr "密碼重設成功"
 
 #: templates/accounts/password_reset_done.html:11
 msgid ""
@@ -2132,19 +2132,20 @@ msgstr "姓氏："
 
 #: templates/accounts/prefs.html:25
 msgid "Email:"
-msgstr ""
+msgstr "Email："
 
 #: templates/accounts/prefs.html:31
 msgid "Change Password:"
-msgstr "更改密碼"
+msgstr "更改密碼："
 
 #: templates/accounts/prefs.html:35
 msgid "Verify New Password:"
-msgstr ""
+msgstr "再次確認密碼："
 
 #: templates/accounts/prefs.html:56
 msgid "Which groups do you belong to or wish to watch?"
-msgstr "哪些群組是您屬於、或是想觀看的？"
+msgstr "請勾選您屬於的群組、或是想觀看的群組："
+
 
 #: templates/accounts/prefs.html:62
 msgid "Save Preferences"
@@ -2152,31 +2153,31 @@ msgstr "儲存喜好設定"
 
 #: templates/accounts/register.html:4
 msgid "Register account"
-msgstr ""
+msgstr "註冊帳號"
 
 #: templates/accounts/register.html:13
 msgid "Username:"
-msgstr ""
+msgstr "使用者名稱："
 
 #: templates/accounts/register.html:18
 msgid "Password:"
-msgstr ""
+msgstr "密碼："
 
 #: templates/accounts/register.html:23
 msgid "Password (repeat):"
-msgstr ""
+msgstr "再次輸入密碼："
 
 #: templates/accounts/register.html:28
 msgid "E-mail address:"
-msgstr ""
+msgstr "E-mail 位址："
 
 #: templates/accounts/register.html:33
 msgid "First name:"
-msgstr ""
+msgstr "名字："
 
 #: templates/accounts/register.html:38
 msgid "Last name:"
-msgstr ""
+msgstr "姓氏："
 
 #: templates/admin/authentication_settings.html:34
 #, python-format
@@ -2187,23 +2188,23 @@ msgstr ""
 
 #: templates/admin/base_site.html:4 templates/admin/base_site.html.py:13
 msgid "Review Board administration"
-msgstr ""
+msgstr "Review Board 管理"
 
 #: templates/admin/base_site.html:17
 msgid "Home"
-msgstr ""
+msgstr "首頁"
 
 #: templates/admin/base_site.html:24
 msgid "Database"
-msgstr ""
+msgstr "資料庫"
 
 #: templates/admin/base_site.html:25
 msgid "Settings"
-msgstr ""
+msgstr "設定"
 
 #: templates/admin/cache_stats.html:18
 msgid "Memory usage:"
-msgstr ""
+msgstr "記憶體使用量："
 
 #: templates/admin/cache_stats.html:22
 msgid "Keys in cache:"
@@ -2253,27 +2254,27 @@ msgstr "新增"
 
 #: templates/admin/dashboard.html:28
 msgid "Review groups"
-msgstr ""
+msgstr "Review 群組"
 
 #: templates/admin/dashboard.html:33
 msgid "Default reviewers"
-msgstr ""
+msgstr "預設審查者"
 
 #: templates/admin/dashboard.html:50
 msgid "Server information."
-msgstr ""
+msgstr "伺服器資訊"
 
 #: templates/admin/dashboard.html:51
 msgid "Server Information"
-msgstr ""
+msgstr "伺服器資訊"
 
 #: templates/admin/dashboard.html:54
 msgid "Review Board version"
-msgstr ""
+msgstr "Review Board 版本"
 
 #: templates/admin/dashboard.html:62
 msgid "Server Log"
-msgstr ""
+msgstr "伺服器 log"
 
 #: templates/admin/dashboard.html:75
 msgid "Latest Review Board news updates."
@@ -2303,23 +2304,23 @@ msgstr ""
 
 #: templates/admin/database.html:33 templates/admin/index.html:33
 msgid "Change"
-msgstr ""
+msgstr "更改"
 
 #: templates/admin/database.html:43 templates/admin/index.html:43
 msgid "You don't have permission to edit anything."
-msgstr ""
+msgstr "你沒有權限編輯任何資料"
 
 #: templates/admin/database.html:51 templates/admin/index.html:51
 msgid "Recent Actions"
-msgstr ""
+msgstr "最近的活動"
 
 #: templates/admin/database.html:52 templates/admin/index.html:52
 msgid "My Actions"
-msgstr ""
+msgstr "我的活動"
 
 #: templates/admin/database.html:55 templates/admin/index.html:55
 msgid "None available"
-msgstr ""
+msgstr "沒有可供存取的項目"
 
 #: templates/admin/feed.html:4
 #, python-format
@@ -2347,7 +2348,7 @@ msgstr ""
 
 #: templates/admin/repository_confirmations.html:5
 msgid "SSH Public Key:"
-msgstr ""
+msgstr "SSH 公鑰："
 
 #: templates/admin/repository_confirmations.html:28
 msgid "There were errors validating this certificate:"
@@ -2359,7 +2360,7 @@ msgstr ""
 
 #: templates/admin/repository_confirmations.html:37
 msgid "Hostname:"
-msgstr ""
+msgstr "主機："
 
 #: templates/admin/repository_confirmations.html:38
 msgid "Valid:"
@@ -2401,7 +2402,7 @@ msgstr ""
 
 #: templates/admin/settings.html:8
 msgid "Authentication"
-msgstr ""
+msgstr "驗證"
 
 #: templates/admin/settings.html:9
 msgid "E-Mail"
@@ -2409,11 +2410,11 @@ msgstr ""
 
 #: templates/admin/settings.html:10 templates/diffviewer/view_diff.html:8
 msgid "Diff Viewer"
-msgstr ""
+msgstr "Diff 檔案瀏覽器"
 
 #: templates/admin/settings.html:11
 msgid "Logging"
-msgstr ""
+msgstr "Log 記錄"
 
 #: templates/admin/settings.html:12
 msgid "SSH"
@@ -2421,7 +2422,7 @@ msgstr ""
 
 #: templates/admin/settings.html:13
 msgid "File Storage"
-msgstr ""
+msgstr "檔案儲存"
 
 #: templates/admin/ssh_settings.html:6
 msgid ""
@@ -2440,7 +2441,7 @@ msgstr ""
 
 #: templates/admin/ssh_settings.html:26
 msgid "Public key:"
-msgstr ""
+msgstr "公鑰："
 
 #: templates/admin/ssh_settings.html:31
 msgid "Generate an SSH Key"
@@ -2525,7 +2526,7 @@ msgstr ""
 
 #: templates/admin/manual-updates/data-dir.html:61
 msgid "Permission problems"
-msgstr ""
+msgstr "權限問題"
 
 #: templates/admin/manual-updates/data-dir.html:63
 msgid ""
@@ -2564,7 +2565,7 @@ msgstr ""
 #: templates/admin/manual-updates/install-patch.html:2
 #, python-format
 msgid "Install GNU %(binaryname)s"
-msgstr ""
+msgstr "安裝 GNU %(binaryname)s"
 
 #: templates/admin/manual-updates/install-patch.html:5
 #, python-format
@@ -2650,7 +2651,7 @@ msgstr ""
 
 #: templates/admin/manual-updates/version-mismatch.html:2
 msgid "Review Board version mismatch"
-msgstr ""
+msgstr "Review Board 版本不符"
 
 #: templates/admin/manual-updates/version-mismatch.html:5
 #, python-format
@@ -2669,7 +2670,7 @@ msgstr ""
 
 #: templates/admin/scmtools/repository/change_form.html:21
 msgid "Show SSH Public Key"
-msgstr ""
+msgstr "顯示 SSH 公鑰"
 
 #: templates/admin/scmtools/repository/change_form.html:33
 msgid "Note:"
@@ -2893,7 +2894,7 @@ msgstr "權限不足，拒絕存取"
 
 #: templates/reviews/group_permission_denied.html:9
 msgid "You don't have access to this group."
-msgstr ""
+msgstr "你沒有存取這個群組的權限"
 
 #: templates/reviews/group_permission_denied.html:11
 msgid ""
@@ -3020,7 +3021,7 @@ msgstr "重新開放 Review"
 
 #: templates/reviews/review_header.html:10
 msgid "Describe the submission (optional):"
-msgstr ""
+msgstr "請說明這次送交的內容（選填）："
 
 #: templates/reviews/review_header.html:22
 msgid "This change has been discarded."
@@ -3195,7 +3196,7 @@ msgstr "顯示已送交的"
 
 #: templates/reviews/review_request_permission_denied.html:9
 msgid "You don't have access to this review request."
-msgstr ""
+msgstr "你沒有存取這個 review request 的權限"
 
 #: templates/reviews/review_request_permission_denied.html:11
 msgid ""
@@ -3223,20 +3224,20 @@ msgstr "畫面截圖"
 
 #: templates/reviews/screenshot_detail.html:50
 msgid "Screenshots:"
-msgstr ""
+msgstr "截圖："
 
 #: templates/reviews/screenshotindex.html:8
 #: templates/reviews/screenshotindex.html:14
 msgid "No name"
-msgstr ""
+msgstr "尚未命名"
 
 #: templates/reviews/search.html:5
 msgid "Search Review Requests"
-msgstr ""
+msgstr "搜尋 Review Requests"
 
 #: templates/reviews/search.html:14
 msgid "No review requests matching your query"
-msgstr ""
+msgstr "沒有任何 review requests 符合您的查詢"
 
 #: templates/reviews/search.html:16
 msgid "Results"
@@ -3258,24 +3259,24 @@ msgstr "群組："
 
 #: webapi/resources.py:5442
 msgid "Review request submitted"
-msgstr ""
+msgstr "Review request 已送交"
 
 #: webapi/resources.py:5444
 msgid "Review request discarded"
-msgstr ""
+msgstr "Review request 已捨棄"
 
 #: webapi/resources.py:5446
 msgid "Review request updated"
-msgstr ""
+msgstr "Review request 已更新"
 
 #: webapi/resources.py:5450
 msgid "Diff updated"
-msgstr ""
+msgstr "Diff 檔已更新"
 
 #: webapi/resources.py:5456
 msgid "New reply"
-msgstr ""
+msgstr "新的回覆"
 
 #: webapi/resources.py:5459
 msgid "New review"
-msgstr ""
+msgstr "新的審查"
