@@ -359,7 +359,7 @@ msgstr ""
 
 #: accounts/models.py:25
 msgid "last visited"
-msgstr ""
+msgstr "上次拜訪"
 
 #: accounts/models.py:45
 msgid "first time setup done"
@@ -370,6 +370,8 @@ msgid ""
 "Indicates whether the user has already gone through the first time setup "
 "process by saving their user preferences."
 msgstr ""
+"指出使用者是否已經設定過他們的喜好設定"
+"並且儲存"
 
 #: accounts/models.py:51
 msgid "collapsed diffs"
@@ -496,7 +498,7 @@ msgstr "時區"
 
 #: admin/forms.py:78
 msgid "The time zone used for all dates on this server."
-msgstr "此時區套用於這個伺服器上的所有時間"
+msgstr "此時區套用於這個站台上的所有時間"
 
 #: admin/forms.py:81
 msgid "Enable search"
@@ -504,15 +506,15 @@ msgstr "開啟搜尋功能"
 
 #: admin/forms.py:82
 msgid "Provides a search field for quickly searching through review requests."
-msgstr ""
+msgstr "提供一個搜尋欄位，以供快速地在 review request 中搜尋。"
 
 #: admin/forms.py:87
 msgid "Search index directory"
-msgstr ""
+msgstr "搜尋索引路徑"
 
 #: admin/forms.py:88
 msgid "The directory that search index data should be stored in."
-msgstr ""
+msgstr "儲存搜尋索引的目錄"
 
 #: admin/forms.py:94
 msgid "Cache Backend"
@@ -524,13 +526,15 @@ msgstr ""
 
 #: admin/forms.py:160
 msgid "The search index path must be absolute."
-msgstr ""
+msgstr "搜尋索引路徑必須是絕對路徑"
 
 #: admin/forms.py:165
 msgid ""
 "The search index path is not writable. Make sure the web server has write "
 "access to it and its parent directory."
 msgstr ""
+"搜尋索引路徑無法寫入。請確定網頁伺服器擁有對它"
+"以及其上層目錄的存取權限。"
 
 #: admin/forms.py:173
 msgid "General Settings"
@@ -557,6 +561,7 @@ msgid ""
 "If checked, users will be able to view review requests and diffs without "
 "logging in."
 msgstr ""
+"若勾選的話，使用者不用登入就可以瀏覽 review requests 以及 diff 檔案。"
 
 #: admin/forms.py:206
 msgid "Authentication Method"
@@ -950,7 +955,7 @@ msgstr "已刪除"
 
 #: diffviewer/models.py:27 reviews/models.py:897
 msgid "diff set"
-msgstr ""
+msgstr "diff 檔案夾"
 
 #: diffviewer/models.py:29
 msgid "source file"
@@ -999,7 +1004,7 @@ msgstr "目錄路徑"
 
 #: diffviewer/models.py:61 reviews/models.py:298
 msgid "diff set history"
-msgstr ""
+msgstr "diff 檔案夾歷史"
 
 #: diffviewer/models.py:63 reviews/models.py:284
 msgid "repository"
@@ -1097,7 +1102,7 @@ msgstr "留言已存為草稿"
 
 #: reviews/datagrids.py:196
 msgid "Comments published. Ship it!"
-msgstr ""
+msgstr "留言已發表。送交！"
 
 #: reviews/datagrids.py:200
 msgid "Comments published"
@@ -1204,7 +1209,7 @@ msgstr "Review 編號"
 
 #: reviews/datagrids.py:552
 msgid "All Outgoing Review Requests"
-msgstr "所有發出去的 Review Requests"
+msgstr "所有我提出的 Review Requests"
 
 #: reviews/datagrids.py:556
 msgid "All My Review Requests"
@@ -1229,7 +1234,7 @@ msgstr "標記星號的 Review Requests"
 
 #: reviews/datagrids.py:584
 msgid "All Incoming Review Requests"
-msgstr "所有送進來的 Review Requests"
+msgstr "所有送來的 Review Requests"
 
 #: reviews/datagrids.py:599
 msgid "Full Name"
@@ -1237,11 +1242,11 @@ msgstr "全名"
 
 #: reviews/datagrids.py:601 reviews/datagrids.py:635
 msgid "Pending Reviews"
-msgstr ""
+msgstr "待決的 Reviews"
 
 #: reviews/datagrids.py:607
 msgid "All submitters"
-msgstr "所有的送交者"
+msgstr "所有的使用者"
 
 #: reviews/datagrids.py:632
 msgid "Group ID"
@@ -1257,7 +1262,7 @@ msgstr "成員"
 
 #: reviews/datagrids.py:643
 msgid "All groups"
-msgstr "所有群組"
+msgstr "所有的群組"
 
 #: reviews/datagrids.py:667
 msgid "Watched groups"
@@ -1290,7 +1295,7 @@ msgstr "檔案庫 %s 不存在於本地站台。"
 
 #: reviews/forms.py:91
 msgid "(None - Graphics only)"
-msgstr ""
+msgstr "（無 - 僅有圖片）"
 
 #: reviews/forms.py:117 templates/reviews/review_request_box.html:75
 msgid "Change Number"
@@ -1314,7 +1319,7 @@ msgstr "使用者"
 
 #: reviews/models.py:96
 msgid "incoming review request count"
-msgstr "送進來的 review request 數"
+msgstr "送來的 review request 數"
 
 #: reviews/models.py:100
 msgid "invite only"
@@ -2139,6 +2144,9 @@ msgid ""
 "  to the e-mail address you submitted. You should be receiving it shortly.\n"
 "  "
 msgstr ""
+"我們已經寄送教您更改您密碼的 e-mail 指引\n"
+"  到您填入的 e-mail 位址。您應該很快就會收到。\n"
+"  "
 
 #: templates/accounts/prefs.html:4
 msgid "My Account"
@@ -2464,6 +2472,8 @@ msgid ""
 " The SSH key configured here will be used for communication with any\n"
 " SSH-backend repositories.\n"
 msgstr ""
+"\n"
+" 這裡的 SSH key 設定是要用來與 SSH-backend 的檔案庫進行通訊之用。\n"
 
 #: templates/admin/ssh_settings.html:14
 msgid "Key type:"
@@ -2516,7 +2526,7 @@ msgstr "上傳 Key"
 
 #: templates/admin/manual-updates/data-dir.html:2
 msgid "Data directory changes"
-msgstr ""
+msgstr "資料目錄變更"
 
 #: templates/admin/manual-updates/data-dir.html:5
 msgid ""
@@ -2549,7 +2559,7 @@ msgstr ""
 
 #: templates/admin/manual-updates/data-dir.html:40
 msgid "Configuring $HOME"
-msgstr ""
+msgstr "設定 $HOME"
 
 #: templates/admin/manual-updates/data-dir.html:42
 msgid ""
@@ -2595,6 +2605,8 @@ msgid ""
 "\n"
 "  The error is as follows:\n"
 msgstr ""
+"\n"
+"  錯誤訊息於下：\n"
 
 #: templates/admin/manual-updates/install-patch.html:2
 #, python-format
@@ -2643,7 +2655,7 @@ msgstr ""
 
 #: templates/admin/manual-updates/media-upload-dir.html:2
 msgid "Media directory changes"
-msgstr ""
+msgstr "媒體目錄變更"
 
 #: templates/admin/manual-updates/media-upload-dir.html:5
 #, python-format
@@ -2652,10 +2664,13 @@ msgid ""
 "  Your Review Board installation does not have a %(MEDIA_ROOT)s/uploaded/"
 "images directory.\n"
 msgstr ""
+"\n"
+"  您的 Review Board 安裝不存在一個 %(MEDIA_ROOT)s/uploaded/"
+"images 目錄。\n"
 
 #: templates/admin/manual-updates/media-upload-dir.html:9
 msgid "If this is a new installation..."
-msgstr ""
+msgstr "若這是一個全新的安裝..."
 
 #: templates/admin/manual-updates/media-upload-dir.html:11
 #, python-format
@@ -2666,10 +2681,15 @@ msgid ""
 "directories writable by the web\n"
 "  server. You can do so with the following commands:\n"
 msgstr ""
+"\n"
+"  在伺服器上建立 <tt>%(MEDIA_ROOT)s/uploaded</tt> 以及\n"
+"  <tt>%(MEDIA_ROOT)s/uploaded/images</tt> 目錄，並且讓網頁伺服器"
+"擁有對這兩個目錄的寫入權限\n"
+"  您可以執行以下指令來完成：\n"
 
 #: templates/admin/manual-updates/media-upload-dir.html:22
 msgid "If this is an existing installation..."
-msgstr ""
+msgstr "若這是一個先前已存在的安裝..."
 
 #: templates/admin/manual-updates/media-upload-dir.html:24
 msgid ""
@@ -2682,6 +2702,14 @@ msgid ""
 "\">Required Server\n"
 "  Updates</a> page for instructions on fixing your setup.\n"
 msgstr ""
+"\n"
+"  一個最近的更新更改了伺服器上的媒體設定。這可能"
+"需要對網頁伺服器的設定進行\n"
+"  手動更新。請瀏覽"
+"\n"
+"  <a href=\"http://code.google.com/p/reviewboard/wiki/RequiredServerUpdates"
+"\">Required Server\n"
+"  Updates</a> 上的 \"Media Changes\" 頁面，以獲得修正您目前設定的指引。\n"
 
 #: templates/admin/manual-updates/version-mismatch.html:2
 msgid "Review Board version mismatch"
@@ -2695,12 +2723,18 @@ msgid ""
 "  site was last upgraded to. You are running <b>%(current_version)s</b> and\n"
 "  the site was last upgraded to <b>%(stored_version)s</b>.\n"
 msgstr ""
+"\n"
+"  現在正在運行的 Review Board 版本與上一次升級到的版本不相符\n"
+"  您正在運行 <b>%(current_version)s</b> 版，而\n"
+"  站台上次更新到的版本事 <b>%(stored_version)s</b> 版。\n"
 
 #: templates/admin/manual-updates/version-mismatch.html:12
 msgid ""
 "\n"
 "  Please upgrade your site to fix this by running:\n"
 msgstr ""
+"\n"
+"  請執行以下指令以升級您的站台：\n"
 
 #: templates/admin/scmtools/repository/change_form.html:21
 msgid "Show SSH Public Key"
@@ -2835,14 +2869,20 @@ msgid ""
 "  <a href=\"%(review_request_url)sdiff/%(revision)s-%(latest_revision)s/"
 "\">See what's changed.</a>\n"
 msgstr ""
+"\n"
+"  這不是 diff 檔案的最新版本。\n"
+"  <a href=\"%(review_request_url)sdiff/\">最新的 diff 檔</a> \n"
+"  是第 %(latest_revision)s 版。\n"
+"  <a href=\"%(review_request_url)sdiff/%(revision)s-%(latest_revision)s/"
+"\">看看有哪些更動</a>。\n"
 
 #: templates/diffviewer/view_diff.html:108
 msgid "You have unpublished comments on other revisions"
-msgstr ""
+msgstr "你已經撤回在其他版本的留言"
 
 #: templates/diffviewer/view_diff.html:110
 msgid "Your review consists of comments on the following revisions:"
-msgstr ""
+msgstr "你的 review 在以下幾個版本有留言內容："
 
 #: templates/diffviewer/view_diff.html:135
 msgid "Jump to revision:"
@@ -2883,15 +2923,15 @@ msgstr "顯示空白符變更"
 
 #: templates/reports/report_list.html:4
 msgid "Reports"
-msgstr ""
+msgstr "報告"
 
 #: templates/reports/report_list.html:8
 msgid "Choose a report"
-msgstr ""
+msgstr "選擇一個報告"
 
 #: templates/reviews/comments_dlg.html:4
 msgid "Other reviews"
-msgstr ""
+msgstr "其他的 reviews"
 
 #: templates/reviews/comments_dlg.html:8
 msgid "Your comment"
@@ -2903,6 +2943,8 @@ msgid ""
 "You must <a href=\"%(login_url)s\">log in</a> to post\n"
 "   a comment."
 msgstr ""
+"你必須 <a href=\"%(login_url)s\">登入</a> 才能夠留言\n"
+"  "
 
 #: templates/reviews/comments_dlg.html:20
 msgid "Open an <u>i</u>ssue"
@@ -2938,6 +2980,11 @@ msgid ""
 " any review requests assigned to it. You can ask the administrator or group\n"
 " owner for access.\n"
 msgstr ""
+"\n"
+" 這個群組是僅供受邀加入的。你必須是群組的成員才能夠"
+"瀏覽\n"
+"任何被指定給這個群組的 review request。你可以向管理員或是群組擁有者申請\n"
+"存取權限。\n"
 
 #: templates/reviews/new_review_request.html:35
 msgid "Tip: Use post-review"
@@ -2976,6 +3023,12 @@ msgid ""
 "     files.\n"
 "     "
 msgstr ""
+"\n"
+"     你無法在此類的 review request 裡新增任何 diff 檔案。這一個 review\n"
+"     request 只在要被進行審查的對象，是螢幕截圖或是其他圖片檔案時有用。"
+"\n"
+"     \n"
+"     "
 
 #: templates/reviews/new_review_request.html:107
 msgid "Create Review Request"
