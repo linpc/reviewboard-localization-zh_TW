@@ -8,9 +8,9 @@ Install
 -----------------------
 1. Go to your reviewboard installed directory.
 
-	# cd reviewboard
-	# mkdir -p locale/zh_TW/LC_MESSAGES
-	# cp django.mo locale/zh_TW/LC_MESSAGES/
+	    # cd reviewboard
+	    # mkdir -p locale/zh_TW/LC_MESSAGES
+	    # cp django.mo locale/zh_TW/LC_MESSAGES/
 
 2. Restart your web server.
 
