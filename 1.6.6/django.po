@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: 1.6.6\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-05-10 07:07+0800\n"
-"PO-Revision-Date: 2012-05-10 07:11+0800\n"
+"PO-Revision-Date: 2012-05-12 08:11+0800\n"
 "Last-Translator: Po-Chien Lin <linpc@cs.nctu.edu.tw>\n"
 "Language-Team: Po-Chien Lin <linpc@cs.nctu.edu.tw>\n"
 "Language: Traditional Chinese (zh_TW)\n"
@@ -175,13 +175,11 @@ msgstr ""
 
 #: accounts/forms.py:248
 msgid "reCAPTCHA Public Key"
-msgstr ""
-"reCAPTCHA 公鑰"
+msgstr "reCAPTCHA 公鑰"
 
 #: accounts/forms.py:253
 msgid "reCAPTCHA Private Key"
-msgstr ""
-"reCAPTCHA 私鑰"
+msgstr "reCAPTCHA 私鑰"
 
 #: accounts/forms.py:262 accounts/forms.py:271
 msgid "This field is required."
@@ -405,23 +403,23 @@ msgstr ""
 
 #: accounts/models.py:173
 msgid "direct incoming review request count"
-msgstr ""
+msgstr "指出送來的 review request 數"
 
 #: accounts/models.py:178
 msgid "total incoming review request count"
-msgstr ""
+msgstr "送來的 review request 總數"
 
 #: accounts/models.py:183
 msgid "pending outgoing review request count"
-msgstr ""
+msgstr "我提出的 review request 待決數"
 
 #: accounts/models.py:188
 msgid "total outgoing review request count"
-msgstr ""
+msgstr "所有提出的 review request 總數"
 
 #: accounts/models.py:193
 msgid "starred public review request count"
-msgstr ""
+msgstr "標記星號的公開 review request 數"
 
 #: admin/checks.py:188
 #, python-format
@@ -429,6 +427,8 @@ msgid ""
 "PyLucene (with JCC) is required to enable search. See the <a href=\"%(url)s"
 "\">documentation</a> for instructions."
 msgstr ""
+"要開啟搜尋功能必須安裝 PyLucene (with JCC)。"
+"請參考 <a href=\"%(url)s\">文件</a> 的指引。"
 
 #: admin/checks.py:205
 #, python-format
@@ -436,6 +436,8 @@ msgid ""
 "Pygments %(cur_version)s is installed, but %(required_version)s or higher is "
 "required to use syntax highlighting."
 msgstr ""
+"已經安裝 Pygments %(cur_version)s 版，"
+"但是要使用語法高亮度必須安裝高於 %(required_version)s 的版本。"
 
 #: admin/checks.py:212
 #, python-format
@@ -443,24 +445,27 @@ msgid ""
 "Syntax highlighting requires the <a href=\"%(url)s\">Pygments</a> library, "
 "which is not installed."
 msgstr ""
+"語法高亮度功能需要 <a href=\"%(url)s\">Pygments</a> 函示庫，但尚未安裝。"
 
 #: admin/checks.py:224
 msgid ""
 "LDAP authentication requires the python-ldap library, which is not installed."
 msgstr ""
+"使用 LDAP 認證需要 python-ldap 函示庫，但尚未安裝。"
 
 #: admin/checks.py:238
 msgid ""
 "PyDNS, which is required to find the domain controller, is not installed."
 msgstr ""
+"使用 domain controller 需要 PyDNS，但尚未安裝。"
 
 #: admin/checks.py:250
 msgid "Amazon S3 depends on django-storages, which is not installed"
-msgstr ""
+msgstr "使用 Amazon S3 需要 django-storages，但尚未安裝。"
 
 #: admin/checks.py:261
 msgid "CouchDB depends on django-storages, which is not installed"
-msgstr ""
+msgstr "使用 CouchDB 需要 django-storages，但尚未安裝。"
 
 #: admin/forms.py:53
 msgid "Server"
@@ -522,7 +527,7 @@ msgstr ""
 
 #: admin/forms.py:95
 msgid "The path to the cache backend.Example: 'memcached://127.0.0.1:11211/'"
-msgstr ""
+msgstr "cache backed 的路徑。例：memcached://127.0.0.1:11211/"
 
 #: admin/forms.py:160
 msgid "The search index path must be absolute."
@@ -641,6 +646,8 @@ msgid ""
 "Show excess trailing whitespace as red blocks. This helps to visualize when "
 "a text editor added unwanted whitespace to the end of a line."
 msgstr ""
+"將行尾的空白符顯示為紅色區塊。這可以在某些文字編輯器會在"
+"行尾加上不想要的空白時提出警示。"
 
 #: admin/forms.py:386
 msgid "Show all whitespace for"
@@ -662,7 +669,7 @@ msgstr "在有異動的行上下方，要顯示的未異動行數。"
 
 #: admin/forms.py:399
 msgid "Paginate by"
-msgstr ""
+msgstr "分頁方式"
 
 #: admin/forms.py:400
 msgid "The number of files to display per page in the diff viewer."
@@ -670,13 +677,14 @@ msgstr "在 diff 檔瀏覽器中，每一頁要顯示的檔案數。"
 
 #: admin/forms.py:405
 msgid "Paginate orphans"
-msgstr ""
+msgstr "新頁檔案數"
 
 #: admin/forms.py:406
 msgid ""
 "The number of extra files required before adding another page to the diff "
 "viewer."
 msgstr ""
+"在 diff 檔瀏覽器上每多出幾個檔案才增加另外一頁。"
 
 #: admin/forms.py:434
 msgid "Diff Viewer Settings"
@@ -691,6 +699,8 @@ msgid ""
 "These are advanced settings that control the behavior and display of the "
 "diff viewer. In general, these settings do not need to be changed."
 msgstr ""
+"這些是控制 diff 檔瀏覽器的行為與顯示的進階設定。"
+"正常情形下，您不需要更動這些設定。"
 
 #: admin/forms.py:463
 msgid "Enable logging"
@@ -711,6 +721,7 @@ msgid ""
 "The directory where log files will be stored. This must be writable by the "
 "web server."
 msgstr ""
+"log 檔要存放的目錄。網頁伺服器必須擁有對它們的寫入權限。"
 
 #: admin/forms.py:476
 msgid "Allow code profiling"
@@ -721,6 +732,8 @@ msgid ""
 "Logs the time spent on certain operations. This is useful for debugging but "
 "may greatly increase the size of log files."
 msgstr ""
+"記錄每個動作實際花的時間。這在 debug 的時候很有用，"
+"但也相對地會增加 log 檔案的大小。"
 
 #: admin/forms.py:487
 msgid "This path does not exist."
@@ -736,7 +749,7 @@ msgstr "這個路徑無法被網頁伺服器寫入"
 
 #: admin/forms.py:507
 msgid "Logging Settings"
-msgstr "記錄設定"
+msgstr "Log 記錄設定"
 
 #: admin/forms.py:527
 msgid "Key file"
@@ -784,6 +797,8 @@ msgid ""
 "Your Amazon AWS access key ID. This can be found in the \"Security "
 "Credentials\" section of the AWS site."
 msgstr ""
+"您的 Amazon AWS access key ID。這可以在 AWS site 上的"
+"\"Security Credentials\" 部分找到。"
 
 #: admin/forms.py:582
 msgid "Amazon AWS secret access key"
@@ -794,6 +809,8 @@ msgid ""
 "Your Amazon AWS secret access ID. This can be found in the \"Security "
 "Credentials\" section of the AWS site."
 msgstr ""
+"您的 AWS secret access ID。這可以在 AWS site 上的"
+"\"Security Credentials\" 部分找到。"
 
 #: admin/forms.py:588
 msgid "S3 bucket name"
@@ -967,11 +984,11 @@ msgstr ""
 
 #: diffviewer/models.py:31
 msgid "source file revision"
-msgstr ""
+msgstr "原始碼檔案版本"
 
 #: diffviewer/models.py:33
 msgid "destination file details"
-msgstr ""
+msgstr "destination file 詳情"
 
 #: diffviewer/models.py:35
 msgid "diff"
@@ -1028,7 +1045,7 @@ msgstr ""
 #: diffviewer/views.py:230
 #, python-format
 msgid "Internal error. Unable to locate file record for filediff %s"
-msgstr ""
+msgstr "發生內部錯誤。無法找到檔案差異 %s 的檔案記錄"
 
 #: reviews/admin.py:28 reviews/admin.py:52 reviews/admin.py:76
 #: reviews/admin.py:105 reviews/admin.py:183 scmtools/admin.py:11
@@ -1050,6 +1067,8 @@ msgid ""
 "<p>A default reviewer will cover all repositories, unless assigned one or "
 "more specific repositories below.</p>"
 msgstr ""
+"<p>預設的審查人會負責所有的檔案庫，除非在下面指定一個"
+"或多個檔案庫。</p>"
 
 #: reviews/admin.py:56 scmtools/admin.py:47
 msgid "Access Control"
@@ -1069,6 +1088,7 @@ msgid ""
 "<p>This is advanced state that should not be modified unless something is "
 "wrong.</p>"
 msgstr ""
+"<p>這是進階的狀態，不應該被改變。除非有發生錯誤。</p>"
 
 #: reviews/admin.py:146
 msgid "Close selected review requests as submitted"
@@ -1226,7 +1246,7 @@ msgstr "給 %s 的 Review Requests"
 
 #: reviews/datagrids.py:575
 msgid "All Incoming Review Requests to My Groups"
-msgstr ""
+msgstr "所有送至我的群組的 Review Requests"
 
 #: reviews/datagrids.py:580
 msgid "Starred Review Requests"
@@ -1281,12 +1301,14 @@ msgid ""
 "File paths are matched against this regular expression to determine if these "
 "reviewers should be added."
 msgstr ""
+"用來比對檔案路徑的 regular expression，用以決定這些審查人是否該被加入。"
 
 #: reviews/forms.py:37
 msgid ""
 "The list of repositories to specifically match this default reviewer for. If "
 "left empty, this will match all repositories."
 msgstr ""
+"用來比對預設審查人的檔案庫清單。若留白，則會應用到所有的檔案庫上。"
 
 #: reviews/forms.py:64
 #, python-format
@@ -1407,13 +1429,14 @@ msgstr "畫面截圖"
 
 #: reviews/models.py:317 reviews/models.py:917
 msgid "inactive screenshots"
-msgstr ""
+msgstr "過時的畫面截圖"
 
 #: reviews/models.py:318
 msgid ""
 "A list of screenshots that used to be but are no longer associated with this "
 "review request."
 msgstr ""
+"以前曾經是、但現在已與這個 review request 不相關的畫面截圖清單。"
 
 #: reviews/models.py:326 reviews/models.py:924
 msgid "file attachments"
@@ -1421,13 +1444,13 @@ msgstr "附加檔案"
 
 #: reviews/models.py:329
 msgid "inactive file attachments"
-msgstr ""
+msgstr "過時的附加檔案"
 
 #: reviews/models.py:330
 msgid ""
 "A list of file attachments that used to be but are no longer associated with "
 "this review request."
-msgstr ""
+msgstr "以前曾經是、但現在已與這個 review request 不相關的附加檔案清單。"
 
 #: reviews/models.py:336
 msgid "change descriptions"
@@ -1455,7 +1478,7 @@ msgstr "更改說明"
 
 #: reviews/models.py:928
 msgid "inactive files"
-msgstr ""
+msgstr "過時的檔案"
 
 #: reviews/models.py:1243
 #, python-format
@@ -1488,7 +1511,7 @@ msgstr "檔案差異"
 
 #: reviews/models.py:1352
 msgid "interdiff file"
-msgstr ""
+msgstr "在差異間比對檔案"
 
 #: reviews/models.py:1357 reviews/models.py:1416 reviews/models.py:1470
 msgid "reply to"
@@ -1548,7 +1571,7 @@ msgstr ""
 
 #: reviews/models.py:1522
 msgid "The top-most review in the discussion thread for this review reply."
-msgstr ""
+msgstr "在這個審查回覆的討論串最上方的 review"
 
 #: reviews/models.py:1529
 msgid "body (top)"
@@ -1556,7 +1579,7 @@ msgstr ""
 
 #: reviews/models.py:1530
 msgid "The review text shown above the diff and screenshot comments."
-msgstr ""
+msgstr "要在 diff 檔與截圖留言上方顯示的審查文字。"
 
 #: reviews/models.py:1532
 msgid "body (bottom)"
@@ -1564,7 +1587,7 @@ msgstr ""
 
 #: reviews/models.py:1533
 msgid "The review text shown below the diff and screenshot comments."
-msgstr ""
+msgstr "要在 diff 檔與截圖留言下方顯示的審查文字。"
 
 #: reviews/models.py:1539
 msgid "body (top) reply to"
@@ -1628,7 +1651,7 @@ msgstr "Bug 追蹤系統"
 #: scmtools/errors.py:29
 #, python-format
 msgid "Changeset %s is empty"
-msgstr ""
+msgstr "Changeset %s 是空白的"
 
 #: scmtools/errors.py:69
 msgid "A repository was not found at the specified path."
@@ -1640,16 +1663,18 @@ msgid ""
 "Unable to authenticate against this repository using one of the supported "
 "authentication types (%(allowed_types)s)."
 msgstr ""
+"無法使用支援的驗證方式 (%(allowed_types)s) 與此檔案庫進行驗證。"
 
 #: scmtools/errors.py:90
 msgid ""
 "Unable to authenticate against this repository using one of the supported "
 "authentication types."
 msgstr ""
+"無法使用支援的驗證方式與此檔案庫進行驗證。"
 
 #: scmtools/errors.py:101
 msgid "A verified HTTPS certificate is required to connect to this repository."
-msgstr ""
+msgstr "連線至這個檔案庫需要一個 verified HTTPS certificate。"
 
 #: scmtools/errors.py:110
 msgid "This SSH key is not a valid RSA or DSS key."
@@ -1818,20 +1843,20 @@ msgstr ""
 
 #: scmtools/forms.py:855
 msgid "users with access"
-msgstr ""
+msgstr "可存取的使用者"
 
 #: scmtools/forms.py:857
 msgid "review groups with access"
-msgstr ""
+msgstr "可存取的 review 群組"
 
 #: scmtools/git.py:328
 #, python-format
 msgid "Permission denied accessing the local Git repository '%s'"
-msgstr ""
+msgstr "連線到本地的 Git 檔案庫 %s 時因權限不足被拒絕"
 
 #: scmtools/git.py:331
 msgid "Unable to retrieve information from local Git repository"
-msgstr ""
+msgstr "無法獲得本地 Git 檔案庫的相關資訊"
 
 #: scmtools/models.py:49
 msgid ""
@@ -1935,15 +1960,15 @@ msgstr ""
 
 #: scmtools/svn.py:307
 msgid "The certificate is not yet valid."
-msgstr ""
+msgstr "這個 certificate 尚未生效。"
 
 #: scmtools/svn.py:310
 msgid "The certificate has expired."
-msgstr ""
+msgstr "這個 certificate 已過期。"
 
 #: scmtools/svn.py:313
 msgid "The certificate hostname does not match."
-msgstr ""
+msgstr "這個 certificate 的主機名稱不符。"
 
 #: scmtools/svn.py:317
 msgid ""
@@ -2019,6 +2044,8 @@ msgid ""
 "Review Board requires JavaScript in order to function.\n"
 "     Please turn it on in your browser preferences."
 msgstr ""
+"您需要開啟 JavaScript 以使用 Review Board 的某些功能。\n"
+"     請在您的瀏覽器喜好設定內開啟它。"
 
 #: templates/base.html:117
 msgid ""
@@ -2028,6 +2055,11 @@ msgid ""
 "addon/722\">NoScript\n"
 "     extension</a>."
 msgstr ""
+"給 Firefox 使用者：若您需要只對某些網站開啟 JavaScript 的設定\n"
+"     我們推薦您\n:"
+"     <a href=\"https://addons.mozilla.org/en-US/firefox/"
+"addon/722\">NoScript\n"
+"     extension</a> 這個外掛套件。"
 
 #: templates/accounts/login.html:6 templates/accounts/login.html.py:20
 msgid "Log In"
@@ -2361,12 +2393,12 @@ msgstr "沒有可供存取的項目"
 #: templates/admin/feed.html:4
 #, python-format
 msgid "<p class=\"feed-error\">Unable to load feed: %(error)s</p>"
-msgstr ""
+msgstr "<p class=\"feed-error\">無法載入 feed：%(error)s</p>"
 
 #: templates/admin/manual_updates_required.html:5
 #: templates/admin/manual_updates_required.html:11
 msgid "Manual server updates required"
-msgstr ""
+msgstr "需要手動更新伺服器"
 
 #: templates/admin/manual_updates_required.html:13
 msgid ""
@@ -2375,8 +2407,8 @@ msgid ""
 "  these changes are made, you should restart your server.\n"
 msgstr ""
 "\n"
-"  一個新的升級需要在這個伺服器上手動更新。在\n"
-"  進行變更之後，您需要重新啟動您的伺服器。\n"
+"  需要手動更新伺服器，以進行新的升級。在\n"
+"  進行變更之後，您需要重新啟動您的網頁伺服器。\n"
 
 #: templates/admin/manual_updates_required.html:19
 msgid ""
@@ -2385,8 +2417,8 @@ msgid ""
 "  <a href=\"http://groups.google.com/group/reviewboard\">mailing list</a>.\n"
 msgstr ""
 "\n"
-"  若您在操作上有任何的問題，請聯絡我們，透過我們的\n"
-"  <a href=\"http://groups.google.com/group/reviewboard\">郵遞論壇</a>.\n"
+"  若您在操作上有任何的問題，請透過我們的\n"
+"  <a href=\"http://groups.google.com/group/reviewboard\">郵遞論壇</a> 聯絡我們。\n"
 
 #: templates/admin/repository_confirmations.html:5
 msgid "SSH Public Key:"
@@ -2394,11 +2426,11 @@ msgstr "SSH 公鑰："
 
 #: templates/admin/repository_confirmations.html:28
 msgid "There were errors validating this certificate:"
-msgstr ""
+msgstr "在驗證 certificate 時有錯誤發生："
 
 #: templates/admin/repository_confirmations.html:36
 msgid "Certificate information:"
-msgstr ""
+msgstr "Certificate 資訊："
 
 #: templates/admin/repository_confirmations.html:37
 msgid "Hostname:"
@@ -2414,6 +2446,8 @@ msgid ""
 "\n"
 "   from %(valid_from)s until %(valid_until)s\n"
 msgstr ""
+"\n"
+"   從 %(valid_from)s 起始，至 %(valid_until)s 截止\n"
 
 #: templates/admin/repository_confirmations.html:43
 msgid "Issuer:"
@@ -2431,6 +2465,9 @@ msgid ""
 "  repository information?\n"
 " "
 msgstr ""
+"\n"
+"  您信任這台主機嗎？或是您要回到上一步，重新編輯檔案庫的資訊？\n"
+" "
 
 #: templates/admin/repository_confirmations.html:68
 #, python-format
@@ -2441,6 +2478,10 @@ msgid ""
 "add it to the server,\n"
 " and then try again.\n"
 msgstr ""
+"\n"
+" Review Board 沒有用來傳送給伺服器的公鑰。您可以\n"
+"<a href=\"%(ssh_settings_url)s\" target=\"ssh_settings\">產生一個</a>，"
+"把它加到伺服器，然後再試一次。\n"
 
 #: templates/admin/settings.html:8
 msgid "Authentication"
@@ -2755,7 +2796,7 @@ msgstr ""
 #: templates/diffviewer/changeindex.html:11
 #, python-format
 msgid "This diff has been split across %(pages)s pages:"
-msgstr ""
+msgstr "這個 diff 檔被分開顯示在 %(pages)s 頁："
 
 #: templates/diffviewer/changeindex.html:12
 msgid "Previous Page"
@@ -2777,7 +2818,7 @@ msgstr "下一頁"
 #: templates/diffviewer/changeindex_entry.html:8
 #: templates/diffviewer/diff_fragment_error.html:35
 msgid "Diff currently unavailable."
-msgstr ""
+msgstr "目前無法使用 Diff 檔"
 
 #: templates/diffviewer/changeindex_entry.html:14
 msgid "deleted"
@@ -2792,7 +2833,11 @@ msgid_plural ""
 "\n"
 " %(counter)s changes\n"
 msgstr[0] ""
+"\n"
+" 1 個變更\n"
 msgstr[1] ""
+"\n"
+" %(counter)s 個變更\n"
 
 #: templates/diffviewer/diff_file_fragment.html:36
 msgid "This is a binary file. The content cannot be displayed."
@@ -2853,6 +2898,9 @@ msgid ""
 "  This diff is part of your current draft. Other users will not see this\n"
 "  diff until you publish your draft.\n"
 msgstr ""
+"\n"
+" 這個 diff 檔是您目前草稿的一部分。除非您發佈您的草稿，\n"
+"否則其他使用者無法看到它。\n"
 
 #: templates/diffviewer/view_diff.html:92
 #, python-format
@@ -3045,7 +3093,7 @@ msgstr "觀看檔案差異"
 
 #: templates/reviews/review_detail.html:53
 msgid "Expand All"
-msgstr "展開全部"
+msgstr "全部展開"
 
 #: templates/reviews/review_detail.html:75
 msgid "Ship it!"
@@ -3155,7 +3203,7 @@ msgstr "捨棄 Review Request"
 #: templates/reviews/review_reply.html:8
 #, python-format
 msgid "%(timestamp_since)s ago (%(timestamp_date)s)"
-msgstr "%(timestamp_since)s 前 （%(timestamp_date)s）"
+msgstr "%(timestamp_since)s 前（%(timestamp_date)s）"
 
 #: templates/reviews/review_reply_section.html:10
 msgid "Add comment"
@@ -3207,7 +3255,7 @@ msgid ""
 "   "
 msgstr ""
 "\n"
-"   於 %(dateadded)s 建立並在 %(lastupdated)s 前送交\n"
+"   於 %(dateadded)s 建立，並在 %(lastupdated)s 前送交\n"
 "   "
 
 #: templates/reviews/review_request_box.html:20
@@ -3218,7 +3266,7 @@ msgid ""
 "   "
 msgstr ""
 "\n"
-"   於 %(dateadded)s 建立並在 %(lastupdated)s 前捨棄\n"
+"   於 %(dateadded)s 建立，並在 %(lastupdated)s 前捨棄\n"
 "   "
 
 #: templates/reviews/review_request_box.html:25
@@ -3229,7 +3277,7 @@ msgid ""
 "   "
 msgstr ""
 "\n"
-"   於 %(dateadded)s 建立並在 %(lastupdated)s 前更新\n"
+"   於 %(dateadded)s 建立，並在 %(lastupdated)s 前更新\n"
 "   "
 
 #: templates/reviews/review_request_box.html:76
@@ -3280,7 +3328,7 @@ msgstr "上傳檔案"
 
 #: templates/reviews/review_request_dlgs.html:66
 msgid "Review File"
-msgstr ""
+msgstr "Review 檔案"
 
 #: templates/reviews/review_request_listview.html:10
 msgid "Hide submitted"
@@ -3301,6 +3349,9 @@ msgid ""
 " directly or on a requested group, and have permission to access the\n"
 " repository in order to view this review request.\n"
 msgstr ""
+"\n"
+" 這是一個非公開的 review request。你必須是審查人之一、或是\n"
+"審查群組的成員，並且有權限存取檔案庫，才能夠瀏覽這個 review request。\n"
 
 #: templates/reviews/reviewable_base.html:18
 msgid "You have a pending review."
@@ -3347,7 +3398,7 @@ msgstr ""
 #: templates/reviews/trophy_box.html:9
 #, python-format
 msgid "%(submitter)s got review request #%(id)s!"
-msgstr ""
+msgstr "%(submitter)s 有一個 review request #%(id)s！"
 
 #: templates/reviews/user_page.html:49
 msgid "Groups:"
